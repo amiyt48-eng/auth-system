@@ -1,0 +1,47 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+<div class="card shadow p-4" style="width:400px">
+
+<h3 class="text-center mb-4">Login</h3>
+
+<div class="mb-3">
+<label>Email</label>
+<input
+type="email"
+class="form-control"
+[(ngModel)]="email"
+placeholder="Enter email">
+</div>
+
+<div class="mb-3">
+<label>Password</label>
+<input
+type="password"
+class="form-control"
+[(ngModel)]="password"
+placeholder="Enter password">
+</div>
+
+<button
+class="btn btn-primary w-100"
+(click)="login()">
+Login
+</button>
+
+<div class="text-center mt-3">
+
+<a routerLink="/auth/forgot-password">
+Forgot Password?
+</a>
+
+<br>
+
+<a routerLink="/auth/register">
+Create Account
+</a>
+
+</div>
+
+</div>
+
+</div>
